@@ -22,7 +22,7 @@ def upload_pic():
         return 'no data', 400
 
     # bucket, object_name = pick_bucket()
-    bucket = "picsave"
+    bucket = os.environ.get('BUCKET')
     object_name = get_object_name(8)
     path = '/tmp/' + object_name
     f = open(path, 'wb')
@@ -31,7 +31,7 @@ def upload_pic():
     object_name = upload_file(path, bucket, object_name)
     if not object_name:
         return 'not pic', 400
-    return 'https://picsave.pics/' + object_name
+    return os.environ.get('APP_URL_PREFIX') + object_name
 
 
 def upload_file(file_name, bucket, object_name):
