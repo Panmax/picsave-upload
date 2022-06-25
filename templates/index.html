@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>PictureSave</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="/static/icon.png">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<div class="file-upload">
+
+  <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+
+  <div class="file-upload-placeholder">
+    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+    <div class="drag-text">
+      <h3 id="show-text">Drag and drop a file or select add Image</h3>
+    </div>
+  </div>
+
+  <div class="file-upload-preview">
+    <img class="file-upload-image" src="#" alt="your image" />
+    <div class="file-upload-remove">
+      <button type="button" onclick="remove()" class="remove-image">Remove</button>
+      <button type="button" onclick="upload()" class="upload-image">Upload</button>
+    </div>
+  </div>
+
+  <div class="file-upload-result">
+    <label>
+      <input class="result-text" value="" disabled/>
+    </label>
+  </div>
+
+  <img src="" alt="" class="hide-image">
+</div>
+<!-- partial -->
+  <script  src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+# py
+*.pyc
+*~
+# editor
+*.sw[opnlm]
+
+.DS_Store
+
+# in dev
+venv/
+node_modules/
+tmp
+/.env
+.vagrant
+athena.log*
+
+# npm-log
+npm-debug.log
+
+*.rdb
+*.dump
+couchdb.stderr
+couchdb.stdout
+snapshot
+stdin
+stdout
+*#
+.idea/
+snow_watcher_pids/
+
+.aproject/
+.ropeproject/
+
+# Sphinx docs
+docs/_build
+
+# all log postfix
+*.log
+
+# tags
+.tags
+.tags_sorted_by_file
