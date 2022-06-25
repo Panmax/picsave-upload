@@ -2,7 +2,7 @@
 
 又一个图床平台。
 
-[https://upload.picsave.pics/](https://upload.picsave.pics/)
+[https://picsave.pics/](https://picsave.pics/)
 
 ### How to run
 
